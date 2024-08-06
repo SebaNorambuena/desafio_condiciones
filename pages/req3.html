@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Requerimiento 3</title>
+</head>
+<body>
+    <div class="container flex center-flex bg-lime">
+        <div class="candado flex center-flex">
+            <div class="flex center-flex flex-column margin-top-1 gap-1">
+                <h1>Ingresa el password</h1>
+                <div class="flex gap-1">
+                    <select name="caja1" id="caja1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select name="caja2" id="caja2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select name="caja3" id="caja3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button onclick=
+                "
+                valor1 = document.getElementById('caja1').value
+                valor2 = document.getElementById('caja2').value
+                valor3 = document.getElementById('caja3').value
+                if (valor1+valor2+valor3 == '911'){
+                    msj = document.getElementById('msj-clave')
+                    msj.innerHTML = 'Password 1 es correcto'
+                }
+                else if (valor1+valor2+valor3 == '714'){
+                    msj = document.getElementById('msj-clave')
+                    msj.innerHTML = 'Password 2 es correcto'
+                }
+                else {
+                    msj = document.getElementById('msj-clave')
+                    msj.innerHTML = 'Password incorrecto'
+                }
+                "
+                >Ingresar</button>
+                <p id="msj-clave"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

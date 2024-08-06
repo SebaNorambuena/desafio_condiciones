@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-lime{
+    background-color: #ECF3D3;
+}
+
+.container {
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.center-flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+.gap-5{
+    gap: 5em;
+}
+.gap-1{
+    gap: 1em;
+}
+
+input{
+    width: 5em;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.but-grande{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    border-radius: 3%;
+    border: solid black 2px;
+    width: 10em;
+    height: 2.5em;
+    text-align: center;
+    a{
+        text-decoration: none;
+    }
+}
+
+.img-medium{
+    width: 371px;
+    height: 406px;
+}
+
+.border{
+    border: solid red 2px;
+}
+
+.container-img img{
+    height: 50vh;
+}
+
+.candado{
+    height: 450px;
+    width: 450px;
+    background-image: url('../img/candado.png');
+    background-size: cover;
+}
+
+.margin-top-1{
+    margin-top: 9em;
+}
